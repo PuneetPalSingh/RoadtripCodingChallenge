@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		396EDAADA58DBE1915A7096E /* Pods_RoadtripCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092282D8287ED3E8D3A78820 /* Pods_RoadtripCodingChallenge.framework */; };
+		790EAF16488DB74081EB04F9 /* Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B707E5D6930EB356925A7 /* Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework */; };
+		9F3E65F0257974E5009B4566 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E65EF257974E4009B4566 /* NetworkClientTests.swift */; };
+		9F3E65FD25797832009B4566 /* TracksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E65DF25790DAA009B4566 /* TracksViewModelTests.swift */; };
+		9FA6B4B4256B24B10044EFED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4B3256B24B10044EFED /* AppDelegate.swift */; };
+		9FA6B4B6256B24B10044EFED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4B5256B24B10044EFED /* SceneDelegate.swift */; };
+		9FA6B4B8256B24B10044EFED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4B7256B24B10044EFED /* LoginViewController.swift */; };
+		9FA6B4BB256B24B10044EFED /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6B4B9256B24B10044EFED /* LoginViewController.storyboard */; };
+		9FA6B4BE256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4BC256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodeld */; };
+		9FA6B4C0256B24B40044EFED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6B4BF256B24B40044EFED /* Assets.xcassets */; };
+		9FA6B4C3256B24B40044EFED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6B4C1256B24B40044EFED /* LaunchScreen.storyboard */; };
+		9FA6B4CE256B24B50044EFED /* RoadtripCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4CD256B24B50044EFED /* RoadtripCodingChallengeTests.swift */; };
+		9FA6B4D9256B24B50044EFED /* RoadtripCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA6B4D8256B24B50044EFED /* RoadtripCodingChallengeUITests.swift */; };
+		9FA6B4EB256B2A180044EFED /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA6B4EA256B2A180044EFED /* SpotifyiOS.framework */; };
+		9FE8D712256B77220066EE9F /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D711256B77220066EE9F /* SpotifyManager.swift */; };
+		9FE8D71A256BCD220066EE9F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D719256BCD210066EE9F /* LoginViewModel.swift */; };
+		9FE8D722256C75EA0066EE9F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D721256C75EA0066EE9F /* AuthManager.swift */; };
+		9FE8D727256C77D60066EE9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D726256C77D60066EE9F /* Constants.swift */; };
+		9FE8D788256CFC110066EE9F /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D787256CFC110066EE9F /* BookmarkViewController.swift */; };
+		9FE8D78D256CFC270066EE9F /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D78C256CFC270066EE9F /* TracksViewController.swift */; };
+		9FE8D792256CFC460066EE9F /* TracksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8D791256CFC460066EE9F /* TracksViewController.storyboard */; };
+		9FE8D797256CFC5C0066EE9F /* BookmarkViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8D796256CFC5C0066EE9F /* BookmarkViewController.storyboard */; };
+		9FE8D79C256CFDE80066EE9F /* UIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D79B256CFDE80066EE9F /* UIBaseViewController.swift */; };
+		9FE8D7A5256D2BD00066EE9F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7A4256D2BD00066EE9F /* Track.swift */; };
+		9FE8D7AA256D3CCF0066EE9F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7A9256D3CCF0066EE9F /* NetworkClient.swift */; };
+		9FE8D7BC256DC8B10066EE9F /* Date+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7BB256DC8B10066EE9F /* Date+Extra.swift */; };
+		9FE8D7C9256DE74A0066EE9F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7C8256DE74A0066EE9F /* Image.swift */; };
+		9FE8D7CE256DEDBA0066EE9F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7CD256DEDBA0066EE9F /* Album.swift */; };
+		9FE8D7DC257263FF0066EE9F /* TracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D7DB257263FF0066EE9F /* TracksViewModel.swift */; };
+		9FE8D80325726F440066EE9F /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D80225726F440066EE9F /* BookmarkViewModel.swift */; };
+		9FE8D82225727B4E0066EE9F /* TracksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D82025727B4E0066EE9F /* TracksCollectionViewCell.swift */; };
+		9FE8D82325727B4E0066EE9F /* TracksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8D82125727B4E0066EE9F /* TracksCollectionViewCell.xib */; };
+		9FE8D828257869080066EE9F /* PlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8D827257869080066EE9F /* PlayerViewController.storyboard */; };
+		9FE8D84125788F520066EE9F /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D84025788F520066EE9F /* PlayerViewController.swift */; };
+		9FE8D84625788F730066EE9F /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8D84525788F730066EE9F /* PlayerViewModel.swift */; };
+		BF85602932FD042CD7D834B3 /* Pods_RoadtripCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DAF1B222F9BF9F9D2465AC /* Pods_RoadtripCodingChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FA6B4CA256B24B50044EFED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA6B4A8256B24B10044EFED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA6B4AF256B24B10044EFED;
+			remoteInfo = RoadtripCodingChallenge;
+		};
+		9FA6B4D5256B24B50044EFED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA6B4A8256B24B10044EFED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FA6B4AF256B24B10044EFED;
+			remoteInfo = RoadtripCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092282D8287ED3E8D3A78820 /* Pods_RoadtripCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadtripCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C24DEE2F3D17DCF84C61FA /* Pods-RoadtripCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallenge/Pods-RoadtripCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		51949D26AC337903A855D758 /* Pods-RoadtripCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallengeTests/Pods-RoadtripCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		53DAF1B222F9BF9F9D2465AC /* Pods_RoadtripCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadtripCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC527D684321D8D120D6F46 /* Pods-RoadtripCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallengeTests/Pods-RoadtripCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF81F36E6D4A7F189CEE385 /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F3E65DF25790DAA009B4566 /* TracksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModelTests.swift; sourceTree = "<group>"; };
+		9F3E65EF257974E4009B4566 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		9FA6B4B0256B24B10044EFED /* RoadtripCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadtripCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA6B4B3256B24B10044EFED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FA6B4B5256B24B10044EFED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FA6B4B7256B24B10044EFED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9FA6B4BA256B24B10044EFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
+		9FA6B4BD256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoadtripCodingChallenge.xcdatamodel; sourceTree = "<group>"; };
+		9FA6B4BF256B24B40044EFED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA6B4C2256B24B40044EFED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA6B4C4256B24B40044EFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA6B4C9256B24B50044EFED /* RoadtripCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadtripCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA6B4CD256B24B50044EFED /* RoadtripCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadtripCodingChallengeTests.swift; sourceTree = "<group>"; };
+		9FA6B4CF256B24B50044EFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA6B4D4256B24B50044EFED /* RoadtripCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoadtripCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA6B4D8256B24B50044EFED /* RoadtripCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadtripCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		9FA6B4DA256B24B50044EFED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA6B4EA256B2A180044EFED /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		9FE8D704256B338F0066EE9F /* RoadtripCodingChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadtripCodingChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FE8D711256B77220066EE9F /* SpotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		9FE8D719256BCD210066EE9F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9FE8D721256C75EA0066EE9F /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		9FE8D726256C77D60066EE9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FE8D787256CFC110066EE9F /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		9FE8D78C256CFC270066EE9F /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		9FE8D791256CFC460066EE9F /* TracksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TracksViewController.storyboard; sourceTree = "<group>"; };
+		9FE8D796256CFC5C0066EE9F /* BookmarkViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookmarkViewController.storyboard; sourceTree = "<group>"; };
+		9FE8D79B256CFDE80066EE9F /* UIBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBaseViewController.swift; sourceTree = "<group>"; };
+		9FE8D7A4256D2BD00066EE9F /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9FE8D7A9256D3CCF0066EE9F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		9FE8D7BB256DC8B10066EE9F /* Date+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extra.swift"; sourceTree = "<group>"; };
+		9FE8D7C8256DE74A0066EE9F /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		9FE8D7CD256DEDBA0066EE9F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		9FE8D7DB257263FF0066EE9F /* TracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewModel.swift; sourceTree = "<group>"; };
+		9FE8D80225726F440066EE9F /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		9FE8D82025727B4E0066EE9F /* TracksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FE8D82125727B4E0066EE9F /* TracksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TracksCollectionViewCell.xib; sourceTree = "<group>"; };
+		9FE8D827257869080066EE9F /* PlayerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayerViewController.storyboard; sourceTree = "<group>"; };
+		9FE8D84025788F520066EE9F /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		9FE8D84525788F730066EE9F /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		BC0B707E5D6930EB356925A7 /* Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16B4E8A63DD08910AFF7FD8 /* Pods-RoadtripCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallenge/Pods-RoadtripCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		E4176C65BE846B78E2265E2F /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA6B4AD256B24B10044EFED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA6B4EB256B2A180044EFED /* SpotifyiOS.framework in Frameworks */,
+				396EDAADA58DBE1915A7096E /* Pods_RoadtripCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4C6256B24B50044EFED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF85602932FD042CD7D834B3 /* Pods_RoadtripCodingChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4D1256B24B50044EFED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790EAF16488DB74081EB04F9 /* Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94319C898AD902FF603D8575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C16B4E8A63DD08910AFF7FD8 /* Pods-RoadtripCodingChallenge.debug.xcconfig */,
+				22C24DEE2F3D17DCF84C61FA /* Pods-RoadtripCodingChallenge.release.xcconfig */,
+				E4176C65BE846B78E2265E2F /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.debug.xcconfig */,
+				9AF81F36E6D4A7F189CEE385 /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.release.xcconfig */,
+				8EC527D684321D8D120D6F46 /* Pods-RoadtripCodingChallengeTests.debug.xcconfig */,
+				51949D26AC337903A855D758 /* Pods-RoadtripCodingChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9FA6B4A7256B24B10044EFED = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4B2256B24B10044EFED /* RoadtripCodingChallenge */,
+				9FA6B4CC256B24B50044EFED /* RoadtripCodingChallengeTests */,
+				9FA6B4D7256B24B50044EFED /* RoadtripCodingChallengeUITests */,
+				9FA6B4E9256B29D70044EFED /* Frameworks */,
+				9FA6B4B1256B24B10044EFED /* Products */,
+				94319C898AD902FF603D8575 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA6B4B1256B24B10044EFED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4B0256B24B10044EFED /* RoadtripCodingChallenge.app */,
+				9FA6B4C9256B24B50044EFED /* RoadtripCodingChallengeTests.xctest */,
+				9FA6B4D4256B24B50044EFED /* RoadtripCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA6B4B2256B24B10044EFED /* RoadtripCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4B3256B24B10044EFED /* AppDelegate.swift */,
+				9FA6B4B5256B24B10044EFED /* SceneDelegate.swift */,
+				9FE8D7EA25726AA90066EE9F /* Views */,
+				9FE8D7F125726AC60066EE9F /* ViewModels */,
+				9FE8D7E325726A5D0066EE9F /* Models */,
+				9FE8D7FE25726B640066EE9F /* Services */,
+				9FE8D726256C77D60066EE9F /* Constants.swift */,
+				9FE8D7BB256DC8B10066EE9F /* Date+Extra.swift */,
+				9FA6B4C1256B24B40044EFED /* LaunchScreen.storyboard */,
+				9FA6B4BF256B24B40044EFED /* Assets.xcassets */,
+				9FA6B4C4256B24B40044EFED /* Info.plist */,
+				9FA6B4BC256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodeld */,
+				9FE8D704256B338F0066EE9F /* RoadtripCodingChallenge-Bridging-Header.h */,
+			);
+			path = RoadtripCodingChallenge;
+			sourceTree = "<group>";
+		};
+		9FA6B4CC256B24B50044EFED /* RoadtripCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4CD256B24B50044EFED /* RoadtripCodingChallengeTests.swift */,
+				9F3E65DF25790DAA009B4566 /* TracksViewModelTests.swift */,
+				9F3E65EF257974E4009B4566 /* NetworkClientTests.swift */,
+				9FA6B4CF256B24B50044EFED /* Info.plist */,
+			);
+			path = RoadtripCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		9FA6B4D7256B24B50044EFED /* RoadtripCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4D8256B24B50044EFED /* RoadtripCodingChallengeUITests.swift */,
+				9FA6B4DA256B24B50044EFED /* Info.plist */,
+			);
+			path = RoadtripCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		9FA6B4E9256B29D70044EFED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA6B4EA256B2A180044EFED /* SpotifyiOS.framework */,
+				092282D8287ED3E8D3A78820 /* Pods_RoadtripCodingChallenge.framework */,
+				BC0B707E5D6930EB356925A7 /* Pods_RoadtripCodingChallenge_RoadtripCodingChallengeUITests.framework */,
+				53DAF1B222F9BF9F9D2465AC /* Pods_RoadtripCodingChallengeTests.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FE8D7E325726A5D0066EE9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FE8D7A4256D2BD00066EE9F /* Track.swift */,
+				9FE8D7C8256DE74A0066EE9F /* Image.swift */,
+				9FE8D7CD256DEDBA0066EE9F /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FE8D7EA25726AA90066EE9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FE8D79B256CFDE80066EE9F /* UIBaseViewController.swift */,
+				9FA6B4B7256B24B10044EFED /* LoginViewController.swift */,
+				9FA6B4B9256B24B10044EFED /* LoginViewController.storyboard */,
+				9FE8D84025788F520066EE9F /* PlayerViewController.swift */,
+				9FE8D827257869080066EE9F /* PlayerViewController.storyboard */,
+				9FE8D78C256CFC270066EE9F /* TracksViewController.swift */,
+				9FE8D791256CFC460066EE9F /* TracksViewController.storyboard */,
+				9FE8D787256CFC110066EE9F /* BookmarkViewController.swift */,
+				9FE8D796256CFC5C0066EE9F /* BookmarkViewController.storyboard */,
+				9FE8D82025727B4E0066EE9F /* TracksCollectionViewCell.swift */,
+				9FE8D82125727B4E0066EE9F /* TracksCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FE8D7F125726AC60066EE9F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9FE8D719256BCD210066EE9F /* LoginViewModel.swift */,
+				9FE8D84525788F730066EE9F /* PlayerViewModel.swift */,
+				9FE8D7DB257263FF0066EE9F /* TracksViewModel.swift */,
+				9FE8D80225726F440066EE9F /* BookmarkViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9FE8D7FE25726B640066EE9F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9FE8D711256B77220066EE9F /* SpotifyManager.swift */,
+				9FE8D7A9256D3CCF0066EE9F /* NetworkClient.swift */,
+				9FE8D721256C75EA0066EE9F /* AuthManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA6B4AF256B24B10044EFED /* RoadtripCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA6B4DD256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallenge" */;
+			buildPhases = (
+				B0FBD9B521E1F65A9F789ECD /* [CP] Check Pods Manifest.lock */,
+				9FA6B4AC256B24B10044EFED /* Sources */,
+				9FA6B4AD256B24B10044EFED /* Frameworks */,
+				9FA6B4AE256B24B10044EFED /* Resources */,
+				6F66F57F2469483393FC147A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoadtripCodingChallenge;
+			productName = RoadtripCodingChallenge;
+			productReference = 9FA6B4B0256B24B10044EFED /* RoadtripCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FA6B4C8256B24B50044EFED /* RoadtripCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA6B4E0256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallengeTests" */;
+			buildPhases = (
+				68291F88CE1602A2DA822FC1 /* [CP] Check Pods Manifest.lock */,
+				9FA6B4C5256B24B50044EFED /* Sources */,
+				9FA6B4C6256B24B50044EFED /* Frameworks */,
+				9FA6B4C7256B24B50044EFED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA6B4CB256B24B50044EFED /* PBXTargetDependency */,
+			);
+			name = RoadtripCodingChallengeTests;
+			productName = RoadtripCodingChallengeTests;
+			productReference = 9FA6B4C9256B24B50044EFED /* RoadtripCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FA6B4D3256B24B50044EFED /* RoadtripCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA6B4E3256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallengeUITests" */;
+			buildPhases = (
+				5E2EC796598BB80531055B1F /* [CP] Check Pods Manifest.lock */,
+				9FA6B4D0256B24B50044EFED /* Sources */,
+				9FA6B4D1256B24B50044EFED /* Frameworks */,
+				9FA6B4D2256B24B50044EFED /* Resources */,
+				54A38BD7FA858F27B31F085E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA6B4D6256B24B50044EFED /* PBXTargetDependency */,
+			);
+			name = RoadtripCodingChallengeUITests;
+			productName = RoadtripCodingChallengeUITests;
+			productReference = 9FA6B4D4256B24B50044EFED /* RoadtripCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA6B4A8256B24B10044EFED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9FA6B4AF256B24B10044EFED = {
+						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
+					};
+					9FA6B4C8256B24B50044EFED = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9FA6B4AF256B24B10044EFED;
+					};
+					9FA6B4D3256B24B50044EFED = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9FA6B4AF256B24B10044EFED;
+					};
+				};
+			};
+			buildConfigurationList = 9FA6B4AB256B24B10044EFED /* Build configuration list for PBXProject "RoadtripCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA6B4A7256B24B10044EFED;
+			productRefGroup = 9FA6B4B1256B24B10044EFED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA6B4AF256B24B10044EFED /* RoadtripCodingChallenge */,
+				9FA6B4C8256B24B50044EFED /* RoadtripCodingChallengeTests */,
+				9FA6B4D3256B24B50044EFED /* RoadtripCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA6B4AE256B24B10044EFED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE8D828257869080066EE9F /* PlayerViewController.storyboard in Resources */,
+				9FE8D82325727B4E0066EE9F /* TracksCollectionViewCell.xib in Resources */,
+				9FA6B4C3256B24B40044EFED /* LaunchScreen.storyboard in Resources */,
+				9FA6B4C0256B24B40044EFED /* Assets.xcassets in Resources */,
+				9FE8D792256CFC460066EE9F /* TracksViewController.storyboard in Resources */,
+				9FE8D797256CFC5C0066EE9F /* BookmarkViewController.storyboard in Resources */,
+				9FA6B4BB256B24B10044EFED /* LoginViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4C7256B24B50044EFED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4D2256B24B50044EFED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54A38BD7FA858F27B31F085E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2EC796598BB80531055B1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68291F88CE1602A2DA822FC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadtripCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F66F57F2469483393FC147A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge/Pods-RoadtripCodingChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge/Pods-RoadtripCodingChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoadtripCodingChallenge/Pods-RoadtripCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FBD9B521E1F65A9F789ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoadtripCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA6B4AC256B24B10044EFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE8D7A5256D2BD00066EE9F /* Track.swift in Sources */,
+				9FA6B4BE256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodeld in Sources */,
+				9FE8D7BC256DC8B10066EE9F /* Date+Extra.swift in Sources */,
+				9FE8D7CE256DEDBA0066EE9F /* Album.swift in Sources */,
+				9FE8D722256C75EA0066EE9F /* AuthManager.swift in Sources */,
+				9FA6B4B8256B24B10044EFED /* LoginViewController.swift in Sources */,
+				9FE8D71A256BCD220066EE9F /* LoginViewModel.swift in Sources */,
+				9FE8D712256B77220066EE9F /* SpotifyManager.swift in Sources */,
+				9FE8D7DC257263FF0066EE9F /* TracksViewModel.swift in Sources */,
+				9FE8D84125788F520066EE9F /* PlayerViewController.swift in Sources */,
+				9FA6B4B4256B24B10044EFED /* AppDelegate.swift in Sources */,
+				9FA6B4B6256B24B10044EFED /* SceneDelegate.swift in Sources */,
+				9FE8D84625788F730066EE9F /* PlayerViewModel.swift in Sources */,
+				9FE8D7C9256DE74A0066EE9F /* Image.swift in Sources */,
+				9FE8D7AA256D3CCF0066EE9F /* NetworkClient.swift in Sources */,
+				9FE8D78D256CFC270066EE9F /* TracksViewController.swift in Sources */,
+				9FE8D79C256CFDE80066EE9F /* UIBaseViewController.swift in Sources */,
+				9FE8D82225727B4E0066EE9F /* TracksCollectionViewCell.swift in Sources */,
+				9FE8D788256CFC110066EE9F /* BookmarkViewController.swift in Sources */,
+				9FE8D80325726F440066EE9F /* BookmarkViewModel.swift in Sources */,
+				9FE8D727256C77D60066EE9F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4C5256B24B50044EFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA6B4CE256B24B50044EFED /* RoadtripCodingChallengeTests.swift in Sources */,
+				9F3E65F0257974E5009B4566 /* NetworkClientTests.swift in Sources */,
+				9F3E65FD25797832009B4566 /* TracksViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FA6B4D0256B24B50044EFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA6B4D9256B24B50044EFED /* RoadtripCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FA6B4CB256B24B50044EFED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA6B4AF256B24B10044EFED /* RoadtripCodingChallenge */;
+			targetProxy = 9FA6B4CA256B24B50044EFED /* PBXContainerItemProxy */;
+		};
+		9FA6B4D6256B24B50044EFED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FA6B4AF256B24B10044EFED /* RoadtripCodingChallenge */;
+			targetProxy = 9FA6B4D5256B24B50044EFED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FA6B4B9256B24B10044EFED /* LoginViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA6B4BA256B24B10044EFED /* Base */,
+			);
+			name = LoginViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		9FA6B4C1256B24B40044EFED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA6B4C2256B24B40044EFED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA6B4DB256B24B50044EFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FA6B4DC256B24B50044EFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA6B4DE256B24B50044EFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16B4E8A63DD08910AFF7FD8 /* Pods-RoadtripCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = RoadtripCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RoadtripCodingChallenge/RoadtripCodingChallenge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9FA6B4DF256B24B50044EFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C24DEE2F3D17DCF84C61FA /* Pods-RoadtripCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = RoadtripCodingChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RoadtripCodingChallenge/RoadtripCodingChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FA6B4E1256B24B50044EFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC527D684321D8D120D6F46 /* Pods-RoadtripCodingChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				INFOPLIST_FILE = RoadtripCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoadtripCodingChallenge.app/RoadtripCodingChallenge";
+			};
+			name = Debug;
+		};
+		9FA6B4E2256B24B50044EFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51949D26AC337903A855D758 /* Pods-RoadtripCodingChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				INFOPLIST_FILE = RoadtripCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoadtripCodingChallenge.app/RoadtripCodingChallenge";
+			};
+			name = Release;
+		};
+		9FA6B4E4256B24B50044EFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4176C65BE846B78E2265E2F /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				INFOPLIST_FILE = RoadtripCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoadtripCodingChallenge;
+			};
+			name = Debug;
+		};
+		9FA6B4E5256B24B50044EFED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF81F36E6D4A7F189CEE385 /* Pods-RoadtripCodingChallenge-RoadtripCodingChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QLHUZX82AB;
+				INFOPLIST_FILE = RoadtripCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puneetpalsingh.RoadtripCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoadtripCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA6B4AB256B24B10044EFED /* Build configuration list for PBXProject "RoadtripCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA6B4DB256B24B50044EFED /* Debug */,
+				9FA6B4DC256B24B50044EFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA6B4DD256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA6B4DE256B24B50044EFED /* Debug */,
+				9FA6B4DF256B24B50044EFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA6B4E0256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA6B4E1256B24B50044EFED /* Debug */,
+				9FA6B4E2256B24B50044EFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA6B4E3256B24B50044EFED /* Build configuration list for PBXNativeTarget "RoadtripCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA6B4E4256B24B50044EFED /* Debug */,
+				9FA6B4E5256B24B50044EFED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FA6B4BC256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FA6B4BD256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodel */,
+			);
+			currentVersion = 9FA6B4BD256B24B10044EFED /* RoadtripCodingChallenge.xcdatamodel */;
+			path = RoadtripCodingChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9FA6B4A8256B24B10044EFED /* Project object */;
+}

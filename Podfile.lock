@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (5.2.1)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - SwiftKeychainWrapper (4.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 5.2.1)
+  - SDWebImage
+  - SwiftKeychainWrapper (from `https://github.com/jrendel/SwiftKeychainWrapper`, branch `master`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  SwiftKeychainWrapper:
+    :branch: master
+    :git: https://github.com/jrendel/SwiftKeychainWrapper
+
+CHECKOUT OPTIONS:
+  SwiftKeychainWrapper:
+    :commit: 9a0294db86521e14df7b383ec912422a8dd498f1
+    :git: https://github.com/jrendel/SwiftKeychainWrapper
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+
+PODFILE CHECKSUM: 5a3a3265820bc6a3a0b648e358e19c73f1293847
+
+COCOAPODS: 1.9.3
